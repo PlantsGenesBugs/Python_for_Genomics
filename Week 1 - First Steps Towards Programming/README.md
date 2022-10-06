@@ -14,7 +14,7 @@ Some thoughts about Good Programming (which is fairly nondescript and somewhat s
 
 Pseudocode: computer-like but human readable. Similar to what you'd add as comments inbetween coding lines.
 
-Example 1: *Write a program that calculates the average value of a series of numbers  
+Example 1: *Write a program that calculates the average value of a series of numbers*  
 Pseudocode:
  - Get numbers by user input
  - Count number of entries
@@ -22,7 +22,7 @@ Pseudocode:
  - Divide sum of numbers by number of entries
  - Display value on screen
 
-Example 2: *Write a program to convert temperature from degrees C to F  
+Example 2: *Write a program to convert temperature from degrees C to F*  
 Pseudocode:
 - Get value in C from user
 - Multiply value by 1.8 and add 32
