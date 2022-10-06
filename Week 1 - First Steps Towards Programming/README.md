@@ -14,7 +14,7 @@ Some thoughts about Good Programming (which is fairly nondescript and somewhat s
 
 Pseudocode: computer-like but human readable. Similar to what you'd add as comments inbetween coding lines.
 
-Example 1: *Write a program that calculates the average value of a series of numbers*  
+**Example 1**: *Write a program that calculates the average value of a series of numbers*  
 Pseudocode:
  - Get numbers by user input
  - Count number of entries
@@ -22,7 +22,7 @@ Pseudocode:
  - Divide sum of numbers by number of entries
  - Display value on screen
 
-Example 2: *Write a program to convert temperature from degrees C to F*  
+**Example 2**: *Write a program to convert temperature from degrees C to F*  
 Pseudocode:
 - Get value in C from user
 - Multiply value by 1.8 and add 32
@@ -32,9 +32,21 @@ Note: Python isn't compiled. It is interpreted as is. A draw-back is that it run
 
 Useful Python Resources:  
 [Python site](http://www.python.org)  
-[Programming in Python (Pasteur Institute)](http://www.pasteur.fr/formation/infobio/python/)  
-[Beginners Python for Bioinformatics (Patrick O'Brien)](http://www.onlamp.com/pub/a/python/2002/10/17/biopython.html)  
-[Python tutorial (interactive)](LearnPython.org)  
 [Think Python (Allen B. Downey)](http://www.greenteapress.com/thinkpython/)  
+
+Installing Python:  
+Get Python from the website (Python.org) and install it
+Open terminal window (Command Prompt on Windows)  
+Type "python" at caret
+Will run python and give details about version, shows >>> where you can input commands  
+
+Alternatively:  
+Download Anaconda from [anaconda.com](https://www.anaconda.com/products/distribution) and install
+Open Anaconda  
+Open Jupyter Notebook application  
+Run code in pre-made cells in this environment  
+
+
+
 
 
