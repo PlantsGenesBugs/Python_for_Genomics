@@ -1,1 +1,5 @@
-Week 1 - Basic Python commands
+## Week 1 - First steps in Programming
+
+
+
+
