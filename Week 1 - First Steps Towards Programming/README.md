@@ -1,6 +1,6 @@
 ## Week 1 - First steps in Programming
 
-Programming can be useful to be independent in the work you want to do. It can also help you to udnerstand output produced by other scientists (involving bioinformatics and genomics) better.
+Programming can be useful to be independent in the work you want to do. It can also help you to understand output produced by other scientists (involving bioinformatics and genomics) better.
 
 #### Programming strategies
 
