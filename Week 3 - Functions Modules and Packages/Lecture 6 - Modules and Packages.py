@@ -5,6 +5,9 @@
 # To use the module, import it using the import statement
 
 import dnautil
+dnautil.reversecomp("GTAC")
+#"GTAC"
+
 
 # module has to be in the working directory (or provide a path)
 # Use sys.path variable from the sys built-in module to check list of all directories where Python looks for files
