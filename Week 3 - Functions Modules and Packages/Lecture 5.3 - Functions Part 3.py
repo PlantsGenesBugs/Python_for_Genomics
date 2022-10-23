@@ -2,7 +2,6 @@
 
 # A function to complement a DNA sequence
 
-#pseudocode
 def reversecomp(seq):
   """Return the reverse complement of the DNA string."""
   seq = reverse_string(seq)
@@ -73,9 +72,12 @@ sentence.split("and")
 #'enzymes and other proteins come in many shapes'
 
 
-# Final function to reverse and complement....
-
-
+# Final function to reverse and complement.... define the internal functions, then create this one and run it!
+def reversecomp(seq):
+  """Return the reverse complement of the DNA string."""
+  seq = reverse_string(seq)
+  seq = complement(seq)
+  return seq
 
 
 # Variable Number of Functions and Arguments
