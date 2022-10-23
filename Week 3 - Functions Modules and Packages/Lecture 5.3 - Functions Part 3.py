@@ -72,12 +72,17 @@ sentence.split("and")
 #'enzymes and other proteins come in many shapes'
 
 
-# Final function to reverse and complement.... define the internal functions, then create this one and run it!
+# Final function to reverse and complement.... define the internal functions, then create this one and run it! (Easiest in Jupyter Notebook)
 def reversecomp(seq):
   """Return the reverse complement of the DNA string."""
   seq = reverse_string(seq)
   seq = complement(seq)
   return seq
+
+dna = "AGTGTGGGGCG"
+reversecomp(dna)
+#'CGCCCCACACT'
+
 
 
 # Variable Number of Functions and Arguments
