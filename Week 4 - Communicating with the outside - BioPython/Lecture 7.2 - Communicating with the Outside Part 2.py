@@ -54,6 +54,49 @@ list(seqs.keys())
 #['KY549441.1', 'MH598906.1', 'HF543599.2', 'KX752088.1', 'NC_046568.1', 'MF035968.1']
 
 
+# Why am I getting an error?! 
+# If you get an error message:
+Traceback (most recent call last):
+  File "<stdin>", line 8, in <module>
+NameError: name 'name' is not defined
+    
+# It is likely your stream position (where python starts reading the file) is NOT at the start of the file
+# To test where your stream position is, use:
+f.tell()            #.tell() function: for more information look here https://docs.python.org/3/library/io.html
+
+# To reset the position, use .seek(0):
+f.seek(0)
+
+# Another reason you could get the above error is if your file starts with anything other than a ">"
+# Based on troubleshooting from Maciel Rodriguez (who did this course in 2018) the fix is to add the following code inside the for loop:
+if not line or line[0]=="#":            # this works only if your file starts with a space/empty line or #. Other characters will have to be specified.
+    continue
+
+ # Another solution to space to the LEFT of your sequence would be to add the .lstrip() function to your for loop, as below:
+for line in f:
+	line = line.rstrip().lstrip()
+	if line.startswith(">"):
+		words=line.split()
+		name=words[0][1:]
+		seqs[name]=""
+	else:
+		seqs[name] = seqs[name]+line
+  
+
+# A copy of this code is available in this repository as "FastaLibrary.py"
+        
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
