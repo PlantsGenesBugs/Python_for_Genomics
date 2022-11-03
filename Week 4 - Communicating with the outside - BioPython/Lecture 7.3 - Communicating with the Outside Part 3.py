@@ -78,8 +78,9 @@ processfasta.py [-h] [-l <length>] <filename> #square brackets for optional args
 		""")
 
 o, a = getopt.getopt(sys.argv[1:], "l:h")			# assign values to lists o and a (where o will be optional and a compulsory arguments)
-								# sys.argv[1:] is all of the arguments excluding the function/programme name you have called
-								# get all the other arguments and then list all of the arguments with a dash command
+								# The first argument of getopt method is ALL of the arguments to the original function (but we use
+								# sys.argv[1:] to list all of the arguments excluding the function/programme name you have called
+								# The second argument of the getopt method is ALL of the arguments the user can supply with a - 								# command (optional)
 								# colon after an argument shows that the foregoing argument requires a number parameter
 			
 # Initialise dictionary (where you will put all of the above listed arguments in a name: value structure)
@@ -99,7 +100,7 @@ if "-l" in opts.keys():				# if the user has specified an optional length argume
 		sys.exit(0)
 	seqlen=opts["-l"]			# if the above returns a false value (sequence is longer than 0): assign the value next to the "-l" argument to the 						    # seqlen key	
 		
-	
+# Note: the above code is available in a separate file in this repository for ease of use (getopt_example.py)	
 
 
 
