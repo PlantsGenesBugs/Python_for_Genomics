@@ -104,6 +104,22 @@ if "-l" in opts.keys():				# if the user has specified an optional length argume
 
 
 
+# Using the System Environment
+
+# When running a script/program in UNIX environment there are standard streams recognized by a computer program:
+# - Standard input (stdin): stream data (e.g. text) going into a program. Unless redirected, stdin is expected from the keyboard which started the program
+# - Standard outpout (stdout): stream where a program writes its output data. Unless redirected, stdout is the text terminal which initiated the program
+# - Standard error (stderr): typically used by programs to output error messages or diagnostics. A stream independent of stdout and can provide error messages even when stdout has been redirected. stderr can also be redirected separately: my_program | my_script.sh 1>program_output.txt 2>error_messages.txt
+
+# The sys module provides file handles for stdin, stdout and stderr:
+# import sys
+# ask sys module to read a line from standard input
+>>> sys.stdin.read()	# call the read method; Python waits for input from keyboard
+a line
+another line		# To show you are done with input, Ctrl+D
+
+
+
 
 
 
