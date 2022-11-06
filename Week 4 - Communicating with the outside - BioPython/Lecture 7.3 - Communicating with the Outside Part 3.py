@@ -6,7 +6,8 @@
 for name, seq in seqs.items():
     print(name, seq)            # Because my example file has large sequences, this comes out as a very big block of data!
 
-# To run a python programme ("processfasta.py") on a specific file ("myfile.fa") from the terminal --> note this is for running code/files from the COMMAND LINE
+# To run a python programme ("processfasta.py") on a specific file ("myfile.fa") from the terminal
+# --> note this is for running code/files from the COMMAND LINE
 >python processfasta.py myfile.fa
 
 # The arguments of the above command are stored in the sys module's argv attributes as a list:
