@@ -66,7 +66,7 @@ def usage():						# define a usage function that tells the user what the functio
 import sys
 import getopt
 def usage():
-	print	("""
+	print("""
 processfasta.py: reads a FASTA file and builds a dictionary with all sequences bigger than a given length
 
 processfasta.py [-h] [-l <length>] <filename> #square brackets for optional args
