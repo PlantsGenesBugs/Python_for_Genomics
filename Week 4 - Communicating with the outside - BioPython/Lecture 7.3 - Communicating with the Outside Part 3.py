@@ -80,7 +80,8 @@ processfasta.py [-h] [-l <length>] <filename> #square brackets for optional args
 o, a = getopt.getopt(sys.argv[1:], "l:h")			# assign values to lists o and a (where o will be optional and a compulsory arguments)
 								# The first argument of getopt method is ALL of the arguments to the original function (but we use
 								# sys.argv[1:] to list all of the arguments excluding the function/programme name you have called
-								# The second argument of the getopt method is ALL of the arguments the user can supply with a - 								# command (optional)
+								# The second argument of the getopt method is ALL of the arguments the user can supply with a - 							
+								# command (optional)
 								# colon after an argument shows that the foregoing argument requires a number parameter
 			
 # Initialise dictionary (where you will put all of the above listed arguments in a name: value structure)
@@ -89,7 +90,8 @@ seqlen=0
 
 for k,v in o:					# name of arg = k, value assigned to arg = v
 	opts[k]=v				# add the value v to the k'th name in the opts dictionary
-if "-h" in opts.keys():				# after creating the dictionaty, if the user has specified -h (which will be present as a key in the dictionary, then 	      usage()				      # run the usage function defined earlier which prints out a description of the programme
+if "-h" in opts.keys():				# after creating the dictionaty, if the user has specified -h (which will be present as a key in the dictionary, then
+	usage()				      # run the usage function defined earlier which prints out a description of the programme
 	sys.exit()				# exit after printing help (quit programme without running anything else)
 if len(a) < 1:					# if user has not specified anything after calling the programme	
 	usage()					# initialise the usage function that will print out the message above; then close programme with message
@@ -98,7 +100,8 @@ if "-l" in opts.keys():				# if the user has specified an optional length argume
 	if int(opts["l"])<0:
 		print("Length of sequence should be positive!")
 		sys.exit(0)
-	seqlen=opts["-l"]			# if the above returns a false value (sequence is longer than 0): assign the value next to the "-l" argument to the 						    # seqlen key	
+	seqlen=opts["-l"]			# if the above returns a false value (sequence is longer than 0): assign the value next to the "-l" argument to the 						    
+						# seqlen key	
 		
 # Note: the above code is available in a separate file in this repository for ease of use (getopt_example.py)	
 
@@ -109,7 +112,8 @@ if "-l" in opts.keys():				# if the user has specified an optional length argume
 # When running a script/program in UNIX environment there are standard streams recognized by a computer program:
 # - Standard input (stdin): stream data (e.g. text) going into a program. Unless redirected, stdin is expected from the keyboard which started the program
 # - Standard outpout (stdout): stream where a program writes its output data. Unless redirected, stdout is the text terminal which initiated the program
-# - Standard error (stderr): typically used by programs to output error messages or diagnostics. A stream independent of stdout and can provide error messages even when stdout has been redirected. stderr can also be redirected separately: my_program | my_script.sh 1>program_output.txt 2>error_messages.txt
+# - Standard error (stderr): typically used by programs to output error messages or diagnostics. A stream independent of stdout and can provide error messages
+#   even when stdout has been redirected. stderr can also be redirected separately: my_program | my_script.sh 1>program_output.txt 2>error_messages.txt
 
 # The sys module provides file handles for stdin, stdout and stderr:
 # import sys
