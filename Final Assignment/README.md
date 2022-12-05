@@ -18,7 +18,7 @@ These are called reading frames 1, 2, and 3 respectively. An open reading frame 
 
 Given an input reading frame on the forward strand (1, 2, or 3) your program should be able to identify all ORFs present in each sequence of the FASTA file, and answer the following questions: what is the length of the longest ORF in the file? What is the identifier of the sequence containing the longest ORF? For a given sequence identifier, what is the longest ORF contained in the sequence represented by that identifier? What is the starting position of the longest ORF in the sequence that contains it? The position should indicate the character number in the sequence. For instance, the following ORF in reading frame 1:
 
->sequence1
+\>sequence1
 
 ATGCCCTAG
 
@@ -26,7 +26,7 @@ starts at position 1.
 
 Note that because the following sequence:
 
->sequence2
+\>sequence2
 
 ATGAAAAAA
 
